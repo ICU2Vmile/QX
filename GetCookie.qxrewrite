@@ -12,7 +12,8 @@ https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-he
 #Sunert_京东来客有礼小程序_获取Cookie
 #'来客有礼'小程序-登陆京东账号-点击'领京豆->翻牌'
 https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
-
+#京东到家
+https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js
 # 京东成长分 (By @barrymchen)
 ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/bt\/h5\/m\/queryUserSignFlow url script-request-header https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jdczfcookie.js
 
