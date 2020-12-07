@@ -49,4 +49,8 @@ https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo url script-req
 # 获取ActivityId与ChannelId
 ^https?:\/\/manhattan\.webapp\.xiaojukeji\.com\/marvel\/api\/manhattan\-signin\-task\/signIn\/execute url script-request-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
 
-hostname = api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com, *.amemv.com,jdjoy.jd.com,draw.jdfcloud.com,wq.jd.com,api.m.jd.com,%APPEND% biz.caiyunapp.com,%APPEND% *.amemv.com,*.m.163.com,daojia.jd.com,m.ctrip.com,cloud.umetrip.com,api-cs.intsig.net,mp.weixin.qq.com,*.bilibili.com
+#yangtingxiao
+#获取挖矿Cookie
+^https:\/\/operation-api\.jimistore\.com\/* url script-request-body https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
+
+hostname = operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com, *.amemv.com,jdjoy.jd.com,draw.jdfcloud.com,wq.jd.com,api.m.jd.com,%APPEND% biz.caiyunapp.com,%APPEND% *.amemv.com,*.m.163.com,daojia.jd.com,m.ctrip.com,cloud.umetrip.com,api-cs.intsig.net,mp.weixin.qq.com,*.bilibili.com
