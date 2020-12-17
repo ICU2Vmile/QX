@@ -1,24 +1,20 @@
-#Nobyda_京东京豆_获取Cookie
-#浏览器打开https://bean.m.jd.com-点击签到并且出现签到日历后-通知获得cookie成功
+#Nobyda_京东App_获取Cookie
+#safari浏览器打开https://bean.m.jd.com-点击签到并且出现签到日历后-通知获得cookie成功
 #双京东账号签到说明: 正确配置QX后, 并使用此脚本获取"账号1"Cookie成功后, 请勿点击退出账号(可能会导致Cookie失效), 无痕浏览器登录"账号2"获取即可.注: 获取"账号1"或"账号2"的Cookie后, 后续仅可更新该"账号1"或"账号2"的Cookie.如需写入其他账号,您可开启脚本内"DeleteCookie"选项以清除Cookie
 #BoxJs订阅地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-#lxk0301_京东个人中心_获取Cookie
-#浏览器打开https://home.m.jd.com/myJd/newhome.action-自动获取 cookie
-#BoxJs订阅地址：https://raw.githubusercontent.com/lxk0301/scripts/master/lxk0301.boxjs.json
-https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-header https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js
-# 宠汪汪助力更新Token
+#宠汪汪助力更新Token
 ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= url script-response-body https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
-# 宠汪汪助力获取Token
+#宠汪汪助力获取Token
 ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= url script-request-header https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
 
 #Sunert_京东来客有礼小程序_获取Cookie
 #'来客有礼'小程序-登陆京东账号-点击'领京豆->翻牌'
 https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
-#京东到家
+#Sunert_京东到家
 https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js
-# 京东成长分 (By @barrymchen)
+#京东成长分 (By @barrymchen)
 ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/bt\/h5\/m\/queryUserSignFlow url script-request-header https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jdczfcookie.js
 
 #chavyleung_京东到家App_获取Cookie
@@ -33,7 +29,6 @@ https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin url scr
 ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
 
 #nzw9314_携程小程序_获取Cookie
-
 ##登录携程微信小程序-我的特权
 ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/16575\/getUserInfo url script-request-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ct_cookie.js
 
@@ -54,14 +49,7 @@ https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo url script-req
 # 获取ActivityId与ChannelId
 ^https?:\/\/manhattan\.webapp\.xiaojukeji\.com\/marvel\/api\/manhattan\-signin\-task\/signIn\/execute url script-request-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
 
-#yangtingxiao
-#支付宝天天挖矿小程序获取Cookie
-^https:\/\/operation-api\.jimistore\.com\/* url script-request-body https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
-
-#梨涡cookie
-https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign url script-request-body https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7dayscookie.js
-
-
-#京东赚赚获取Cookie
+#whyour_京东赚赚获取Cookie
 ^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
+
 hostname = operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com, *.amemv.com,jdjoy.jd.com,draw.jdfcloud.com,wq.jd.com,api.m.jd.com,%APPEND% biz.caiyunapp.com,%APPEND% *.amemv.com,*.m.163.com,daojia.jd.com,m.ctrip.com,cloud.umetrip.com,api-cs.intsig.net,mp.weixin.qq.com,*.bilibili.com
