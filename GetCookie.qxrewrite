@@ -1,3 +1,10 @@
+#中青看点cookie
+https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+https?:\/\/ios\.baertt\.com\/v5\/article\/complete url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+https:\/\/ios\.baertt\.com\/v5\/article\/red_packet url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+#中青看点cookie
+
 #Nobyda_京东App_获取Cookie
 #safari浏览器打开https://bean.m.jd.com-点击签到并且出现签到日历后-通知获得cookie成功
 #双京东账号签到说明: 正确配置QX后, 并使用此脚本获取"账号1"Cookie成功后, 请勿点击退出账号(可能会导致Cookie失效), 无痕浏览器登录"账号2"获取即可.注: 获取"账号1"或"账号2"的Cookie后, 后续仅可更新该"账号1"或"账号2"的Cookie.如需写入其他账号,您可开启脚本内"DeleteCookie"选项以清除Cookie
@@ -49,4 +56,4 @@ https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo url script-req
 # 获取ActivityId与ChannelId
 ^https?:\/\/manhattan\.webapp\.xiaojukeji\.com\/marvel\/api\/manhattan\-signin\-task\/signIn\/execute url script-request-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
 
-hostname = operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com, *.amemv.com,jdjoy.jd.com,draw.jdfcloud.com,wq.jd.com,api.m.jd.com,%APPEND% biz.caiyunapp.com,%APPEND% *.amemv.com,*.m.163.com,daojia.jd.com,m.ctrip.com,cloud.umetrip.com,api-cs.intsig.net,mp.weixin.qq.com,*.bilibili.com
+hostname = operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com, *.amemv.com,jdjoy.jd.com,draw.jdfcloud.com,wq.jd.com,api.m.jd.com,%APPEND% biz.caiyunapp.com,%APPEND% *.amemv.com,*.m.163.com,daojia.jd.com,m.ctrip.com,cloud.umetrip.com,api-cs.intsig.net,mp.weixin.qq.com,*.bilibili.com,*.youth.cn, ios.baertt.com
