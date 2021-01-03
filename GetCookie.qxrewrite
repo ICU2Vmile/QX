@@ -1,38 +1,27 @@
-#中青看点cookie
-https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
-https?:\/\/ios\.baertt\.com\/v5\/article\/complete url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
-https:\/\/ios\.baertt\.com\/v5\/article\/red_packet url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
-https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
-#中青看点cookie
-
-#Nobyda_京东App_获取Cookie
-#safari浏览器打开https://bean.m.jd.com-点击签到并且出现签到日历后-通知获得cookie成功
-#双京东账号签到说明: 正确配置QX后, 并使用此脚本获取"账号1"Cookie成功后, 请勿点击退出账号(可能会导致Cookie失效), 无痕浏览器登录"账号2"获取即可.注: 获取"账号1"或"账号2"的Cookie后, 后续仅可更新该"账号1"或"账号2"的Cookie.如需写入其他账号,您可开启脚本内"DeleteCookie"选项以清除Cookie
-#BoxJs订阅地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json
+#Nobyda的京东多合一脚本获取Cookie
+#1.safari无痕浏览器打开https://bean.m.jd.com-点击签到并且出现签到日历后-通知获得cookie成功,支持两个账号。采用BoxJs 切换回话可支持无限个（一个会话支持两个账号）
+#2.BoxJs使用：[Http_backend]代码块中：https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, tag=BoxJs, path=^/, img-url=https://raw.githubusercontent.com/Orz-3/task/master/box.png, enabled=true
+#3.BoxJs订阅地址: https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json
+#4.BoxJs切换会话：[task_local]代码块中：7 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js, tag=切换会话, img-url=https://raw.githubusercontent.com/Orz-3/task/master/box.png, enabled=true
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-#宠汪汪助力更新Token
-^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= url script-response-body https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
-#宠汪汪助力获取Token
-^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= url script-request-header https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+#lxk0301京东系列脚本的其他账号Cookie获取，不和NobyDa的京东cookie冲突。
+#1.https://home.m.jd.com/myJd/newhome.action 到浏览器打开 ，在个人中心自动获取 cookie，若弹出成功则正常使用。否则继续再此页面继续刷新一下试试
+https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-header https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js
 
-#Sunert_京东来客有礼小程序_获取Cookie
-#'来客有礼'小程序-登陆京东账号-点击'领京豆->翻牌'
-https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
-#Sunert_京东到家
+#lxk0301的小米运动获取Cookie
+^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
+
+#Sunert的京东到家脚本获取Cookie
+#1.APP登陆账号后，点击首页'签到',即可获取Cookie.
 https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js
-#京东成长分 (By @barrymchen)
-^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/bt\/h5\/m\/queryUserSignFlow url script-request-header https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jdczfcookie.js
 
-#chavyleung_京东到家App_获取Cookie
-^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.cookie.js
-
-#chavyleung_Bilibili_获取Cookie
-#浏览器访问https://www.bilibili.com 或 https://live.bilibili.com获取
+#chavyleung的Bilibili签到脚本获取Cookie
+#1.浏览器访问https://www.bilibili.com 或 https://live.bilibili.com获取
 ^https:\/\/(www|live)\.bilibili\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
 
-#chavyleung_美团_获取Cookie
-##APP-手动签到 1 次, (`首页` > `红包签到`)
+#chavyleung的美团签到脚本获取Cookie
+#1.APP-手动签到 1 次, (`首页` > `红包签到`)
 ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
 
 #nzw9314_携程小程序_获取Cookie
@@ -46,14 +35,39 @@ https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo url script-req
 #zZpiglet_航旅纵横pro_获取Cookie
 ^https:\/\/cloud\.umetrip\.com\/gateway\/api\/web\/rest\/polite\/app\/sign\/signpageinitdata url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
 
-# 滴滴出行每日自动签到
-# 获取Token
+#blackmatrix7的滴滴出行每日自动签到获取Cookie
+#1.获取Token
 ^https?:\/\/api\.didialift\.com\/beatles\/userapi\/user\/user\/getuserinfo?.*city_id=(\d+).*&token=([^&]*) url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
-# 获取Ticket(备用，无法获取Token时尝试)
+#2.获取Ticket(备用，无法获取Token时尝试)
 ^https?:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?.*location_cityid=(\d+).*&ticket=([^&]*) url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
-# 获取lid
+#3.获取lid
 ^https?:\/\/bosp-api\.xiaojukeji\.com\/bosp-api\/lottery\/info?.*lid=([^&]*) url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
-# 获取ActivityId与ChannelId
+#4.获取ActivityId与ChannelId
 ^https?:\/\/manhattan\.webapp\.xiaojukeji\.com\/marvel\/api\/manhattan\-signin\-task\/signIn\/execute url script-request-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
 
-hostname = operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com, *.amemv.com,jdjoy.jd.com,draw.jdfcloud.com,wq.jd.com,api.m.jd.com,%APPEND% biz.caiyunapp.com,%APPEND% *.amemv.com,*.m.163.com,daojia.jd.com,m.ctrip.com,cloud.umetrip.com,api-cs.intsig.net,mp.weixin.qq.com,*.bilibili.com,*.youth.cn, ios.baertt.com
+#Nobyda的爱奇艺获取Cookie
+^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+#Sunert的中青看点脚本获取Cookie
+#1.进入app，进入任务中心或者签到一次,即可获取Cookie. 
+#2.阅读一篇文章，获取阅读请求body，
+#3.同时获取阅读时长，
+#4.在阅读文章最下面有个惊喜红包，点击获取惊喜红包请求
+https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+https?:\/\/ios\.baertt\.com\/v5\/article\/complete url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+https:\/\/ios\.baertt\.com\/v5\/article\/red_packet url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+
+#chavyleung的喜马拉雅签到脚本获取Cookie
+^https?:\/\/.*\/mobile\-user\/homePage\/.* url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
+
+#ziye12的QQ小程序企鹅读书脚本获取Cookie
+#1.浏览器https://m.q.qq.com/a/s/d3eacc70120b9a37e46bad408c0c4c2a，跳转QQ登陆
+#2.进“书库”选择一本书,看10秒以下,然后退出，获取时长url和时长header以及更新body，看书一定不能超过10秒
+#3.企鹅读书获取更新body
+https:\/\/mqqapi\.reader\.qq\.com\/log\/v4\/mqq\/track url script-request-body https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
+#4.企鹅读书获取时长cookie
+https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid? url script-request-header https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
+
+
+hostname = api.m.jd.com,daojia.jd.com,*.youth.cn,ios.baertt.com,mobwsa.ximalaya.com,wq.jd.com,account.huami.com,mqqapi.reader.qq.com,*.bilibili.com,operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com,m.ctrip.com,cloud.umetrip.com,ifac*.iqiyi.com
