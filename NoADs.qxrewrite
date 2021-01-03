@@ -7,3 +7,5 @@
 
 #iepngs_微信_朋友圈去广告
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(getappmsgext|getappmsgad) url script-response-body https://raw.githubusercontent.com/iepngs/Script/master/weixin/ad.js
+
+hostname = *.amemv.com,mp.weixin.qq.com
