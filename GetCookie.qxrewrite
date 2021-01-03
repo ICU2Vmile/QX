@@ -19,6 +19,9 @@ https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin url scr
 #chavyleung的Bilibili签到脚本获取Cookie
 #1.浏览器访问https://www.bilibili.com 或 https://live.bilibili.com获取
 ^https:\/\/(www|live)\.bilibili\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
+#0 0 0 * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js
+# 如需银瓜子转硬币，添加以下内容 
+#10 0 0 * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.silver2coin.js
 
 #chavyleung的美团签到脚本获取Cookie
 #1.APP-手动签到 1 次, (`首页` > `红包签到`)
