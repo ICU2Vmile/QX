@@ -77,4 +77,8 @@ https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid? url script-request-h
 http:\/\/uploads2\.gifshow\.com\/rest\/n\/system\/speed url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
 https:\/\/nebula\.kuaishou\.com\/nebula\/task\/earning\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
 
-hostname = api.m.jd.com,daojia.jd.com,*.youth.cn,ios.baertt.com,mobwsa.ximalaya.com,wq.jd.com,account.huami.com,mqqapi.reader.qq.com,*.bilibili.com,operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com,m.ctrip.com,cloud.umetrip.com,ifac*.iqiyi.com,zhiyou.smzdm.com,user-api.smzdm.com,nebula.kuaishou.com
+#chavyleung的10086签到脚本获取Cookie
+^http:\/\/wx.10086.cn\/website\/taskCenter\/index\? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
+^http:\/\/wx.10086.cn\/website\/taskCenter\/sign\? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
+
+hostname = api.m.jd.com,daojia.jd.com,*.youth.cn,ios.baertt.com,mobwsa.ximalaya.com,wq.jd.com,account.huami.com,mqqapi.reader.qq.com,*.bilibili.com,operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com,m.ctrip.com,cloud.umetrip.com,ifac*.iqiyi.com,zhiyou.smzdm.com,user-api.smzdm.com,nebula.kuaishou.com,wx.10086.cn
