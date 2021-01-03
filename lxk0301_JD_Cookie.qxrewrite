@@ -1,7 +1,0 @@
-#Nobyda签到脚本只支持两个Cookie，多个账户的需要借助BoxJs。而lxk0301签到脚本支持多个Cookie
-#本脚本用于lxk0301脚本的其他Cookie获取，不和NobyDa的京东cookie冲突。
-#https://home.m.jd.com/myJd/newhome.action 到浏览器打开 ，在个人中心自动获取 cookie，若弹出成功则正常使用。否则继续再此页面继续刷新一下试试
-
-https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-header https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js
-
-hostname = wq.jd.com
