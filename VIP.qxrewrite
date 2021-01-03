@@ -29,8 +29,10 @@ https:\/\/.*\.xiaoxiao.*\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) url scri
 #知音漫客VIP (By mieqq)
 ^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
 
-#哔哩哔哩番剧开启1080P+
+#bilibili番剧开启1080P+和解锁
 ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
+^https:\/\/api.bilibili.com\/pgc\/player\/api\/playurl url script-response-body https://raw.githubusercontent.com/Sunert/Scripts/master/Script/Bilibili/bilibili.unblock.playurl.min.js
+^https:\/\/api.bilibili.com\/pgc\/view\/app\/season url script-response-body https://raw.githubusercontent.com/Sunert/Scripts/master/Script/Bilibili/bilibili.unblock.season.min.js
 
 #VSCO滤镜VIP
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
@@ -80,4 +82,7 @@ https:\/\/.*\.xiaoxiao.*\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) url scri
 #PicsArt美易 pro
 ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
 
-hostname = api-cs.intsig.net,mobile-api.adguard.com, api.bilibili.com, app.bilibili.com, *.kuwo.cn, *.xiaoxiao*.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api1.dobenge.cn, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.bjxkhc.com, viva.v21xy.com, biz.caiyunapp.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com
+#JAV101无限观看 啪啪啪研究所vip❤凉意  下载链接🔗推荐码：NDHJVB   https://zhhml.cn?code=NDHJVB&channelCode=share
+^https\:\/\/pwaapi\.gao1gps\.cn\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/Sunert/Scripts/master/Script/JAV101.js
+
+hostname = api-cs.intsig.net,mobile-api.adguard.com, api.bilibili.com, app.bilibili.com, *.kuwo.cn, *.xiaoxiao*.com, p.du.163.com, getuserinfo.321mh.com, getuserinfo-globalapi.zymk.cn, ios.fuliapps.com, vsco.co, api.vnision.com, *.my10api.com, apple.fuliapps.com, newdrugs.dxy.cn, app101.avictown.cc, api.hlo.xyz, api.ijo.xyz, www.luqijianggushi.com, account.wps.cn, u.kanghuayun.com, api1.dobenge.cn, api.mvmtv.com, mitaoapp.yeduapp.com, origin-prod-phoenix.jibjab.com, www.3ivf.com, pay.guoing.com, api.bjxkhc.com, viva.v21xy.com, biz.caiyunapp.com, ap*.intsig.net, mp.bybutter.com, api.vuevideo.net, api.picsart.c*, api.meiease.c*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com,api.*.cn
