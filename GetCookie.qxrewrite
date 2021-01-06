@@ -12,31 +12,9 @@ https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-he
 #lxk0301的小米运动获取Cookie
 ^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
 
-#Sunert的京东到家脚本获取Cookie
-#1.APP登陆账号后，点击首页'签到',即可获取Cookie.
-https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js
-
-#chavyleung的Bilibili签到脚本获取Cookie
-#1.浏览器访问https://www.bilibili.com 或 https://live.bilibili.com获取
-^https:\/\/(www|live)\.bilibili\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
-#0 0 0 * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js
-# 如需银瓜子转硬币，添加以下内容 
-#10 0 0 * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.silver2coin.js
-
 #chavyleung的美团签到脚本获取Cookie
 #1.APP-手动签到 1 次, (`首页` > `红包签到`)
 ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
-
-#nzw9314_携程小程序_获取Cookie
-##登录携程微信小程序-我的特权
-^https:\/\/m\.ctrip\.com\/restapi\/soa2\/16575\/getUserInfo url script-request-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ct_cookie.js
-
-#nzw9314_携程_获取Cookie
-##打开App-点击"我的"-点击"我的积分"-再点击下面的"签到.任务"即可
-https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo url script-request-header https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip_cookie.js
-
-#zZpiglet_航旅纵横pro_获取Cookie
-^https:\/\/cloud\.umetrip\.com\/gateway\/api\/web\/rest\/polite\/app\/sign\/signpageinitdata url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
 
 #blackmatrix7的滴滴出行每日自动签到获取Cookie
 #1.获取Token
@@ -61,23 +39,8 @@ https?:\/\/ios\.baertt\.com\/v5\/article\/complete url script-request-body https
 https:\/\/ios\.baertt\.com\/v5\/article\/red_packet url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
 https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
 
-#chavyleung的喜马拉雅签到脚本获取Cookie
-^https?:\/\/.*\/mobile\-user\/homePage\/.* url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
-
-#ziye12的QQ小程序企鹅读书脚本获取Cookie
-#1.浏览器https://m.q.qq.com/a/s/d3eacc70120b9a37e46bad408c0c4c2a，跳转QQ登陆
-#2.进“书库”选择一本书,看10秒以下,然后退出，获取时长url和时长header以及更新body，看书一定不能超过10秒
-#3.企鹅读书获取更新body
-https:\/\/mqqapi\.reader\.qq\.com\/log\/v4\/mqq\/track url script-request-body https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
-#4.企鹅读书获取时长cookie
-https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid? url script-request-header https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
-
 #blackmatrix7的什么值得买签到脚本获取Cookie
 ^https?:\/\/zhiyou\.smzdm\.com\/user$ url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.js
 ^https?:\/\/user-api\.smzdm\.com\/user_login\/normal$ url script-request-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.js
 
-#Sunert的快手视频获取Cookie
-http:\/\/uploads2\.gifshow\.com\/rest\/n\/system\/speed url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
-https:\/\/nebula\.kuaishou\.com\/nebula\/task\/earning\? url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
-
-hostname = api.m.jd.com,daojia.jd.com,*.youth.cn,ios.baertt.com,mobwsa.ximalaya.com,wq.jd.com,account.huami.com,mqqapi.reader.qq.com,*.bilibili.com,operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com,m.ctrip.com,cloud.umetrip.com,ifac*.iqiyi.com,zhiyou.smzdm.com,user-api.smzdm.com,nebula.kuaishou.com
+hostname = api.m.jd.com,daojia.jd.com,*.youth.cn,ios.baertt.com,mobwsa.ximalaya.com,wq.jd.com,account.huami.com,mqqapi.reader.qq.com,*.bilibili.com,operation-api.jimistore.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,i.meituan.com,m.ctrip.com,cloud.umetrip.com,ifac*.iqiyi.com,zhiyou.smzdm.com,user-api.smzdm.com
