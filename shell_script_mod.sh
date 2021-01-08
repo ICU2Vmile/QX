@@ -1,3 +1,4 @@
+echo "199.232.96.133 raw.githubusercontent.com" >> /etc/hosts
 ##使用自定义shell下载并配置中青看点极速版
 wget -O /scripts/youth.js https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
 echo -e >> /scripts/docker/merged_list_file.sh
