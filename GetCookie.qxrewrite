@@ -7,10 +7,10 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 #lxk0301京东系列脚本的其他账号Cookie获取，不和NobyDa的京东cookie冲突。
 #1.https://home.m.jd.com/myJd/newhome.action 到浏览器打开 ，在个人中心自动获取 cookie，若弹出成功则正常使用。否则继续再此页面继续刷新一下试试
-https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-header https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js
+https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-header https://raw.githubusercontent.com/LXK9301/jd_scripts/master/JD_extra_cookie.js
 
 #lxk0301的小米运动获取Cookie
-^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
+^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://raw.githubusercontent.com/LXK9301/jd_scripts/master/backUp/xmSports.js
 
 #chavyleung的美团签到脚本获取Cookie
 #1.APP-手动签到 1 次, (`首页` > `红包签到`)
