@@ -8,7 +8,7 @@
 #脚本里面有内置提供的friendPin，如果你没有修改脚本或者BoxJs处填写自己的互助码，会默认给脚本内置的助力。
 
 # 宠汪汪助力更新Token
-^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= url script-response-body hhttps://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
+^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= url script-response-body https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
 # 宠汪汪助力获取Token
 ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= url script-request-header https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
 
