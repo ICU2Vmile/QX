@@ -9,7 +9,4 @@
 ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 
-#lxk0301_京东App宠汪汪聚宝盆辅助脚本
-^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox url script-response-body https://gitee.com/lxk0301/jd_scripts/raw/master/jd_petTreasureBox.js
-
-hostname = api.m.jd.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com,jdjoy.jd.com
+hostname = api.m.jd.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com
